@@ -1,0 +1,41 @@
+{
+  "profile": [
+    {
+      "id": 1,
+      "name": "Prabhath",
+      "email": "prabhath@gmail.com"
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "content": "Hello, world 1",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "content": "Hello, world 2",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "content": "Hello, world 3",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "content": "Hello, world 4",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "content": "Hello, world 5",
+      "completed": true
+    },
+    {
+      "id": 6,
+      "content": "Hello, world 6",
+      "completed": false
+    }
+  ]
+}
