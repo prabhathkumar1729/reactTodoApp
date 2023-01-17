@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeProfile } from "../reducers/profileSlice";
+import "../styles/profilepage.css";
 export default function Profilecard() {
   const dispatch = useDispatch();
   const profile = useSelector((state) => state.profile.profile);
@@ -26,6 +27,7 @@ export default function Profilecard() {
 
   return (
     <>
+    <div className="profile_container">
       <form onSubmit={handleSaveClick}>
         <label>
           Name:
@@ -52,6 +54,7 @@ export default function Profilecard() {
         {!isEditable && <button onClick={handleEditClick}>Edit</button>}
         {isEditable && <button type="submit">Save</button>}
       </form>
+      </div>
     </>
   );
 }

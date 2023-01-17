@@ -1,14 +1,14 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FaReact } from "react-icons/fa";
-// import "../styles/navbar.css"
+import "../styles/navbar.css";
 export default function Navbar() {
   const navigate = useNavigate();
   return (
     <>
       <div className="Nav">
         <NavLink to="/" activeClassName="active">
-          <FaReact/>
+          <FaReact />
         </NavLink>
         <div className="NavMenu">
           <NavLink to="/profile" activeClassName="active">

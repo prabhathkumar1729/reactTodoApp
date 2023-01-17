@@ -1,7 +1,14 @@
 import React from "react";
-
+import "../styles/todolist.css";
 export default function Hometodo({ todos }) {
   // console.log("Hometodo", todos);
+  function getRowColor(completed) {
+    if (completed) {
+      return "green";
+    } else {
+      return "red";
+    }
+  }
   return (
     <>
       <table>
@@ -10,7 +17,7 @@ export default function Hometodo({ todos }) {
             <th>S.No</th>
             <th>Todo</th>
             <th>Completed</th>
-          </tr> 
+          </tr>
         </thead>
         <tbody>
           {todos.todos.length === 0 && (
@@ -19,7 +26,10 @@ export default function Hometodo({ todos }) {
             </tr>
           )}
           {todos.todos.map((todo, index) => (
-            <tr key={index}>
+            <tr
+              key={index}
+              style={{ backgroundColor: getRowColor(todo.completed) }}
+            >
               <td>{index + 1}</td>
               <td>{todo.content}</td>
               <td>{todo.completed ? "Yes" : "No"}</td>

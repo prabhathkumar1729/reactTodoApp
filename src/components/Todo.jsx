@@ -45,6 +45,7 @@ export default function Todo() {
 
   return (
     <>
+    <div className="addtodo_container">
       <form onSubmit={handleSubmit}>
         <label>
           Content:
@@ -68,7 +69,7 @@ export default function Todo() {
         <button type="submit">Save</button>
         <button onClick={handleDelete}>Delete</button>
       </form>
-
+      </div>
       {/* <div>Todo</div>
             <div>{todo.content}</div>
             <div>{todo.completed ? "Yes" : "No"}</div>
