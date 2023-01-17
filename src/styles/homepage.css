@@ -1,0 +1,12 @@
+.homepage {
+  align-items: center;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.username {
+  color: rgb(186, 36, 255);
+  font-size: 40px;
+}

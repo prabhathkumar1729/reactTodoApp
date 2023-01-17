@@ -1,0 +1,16 @@
+td, th {
+    border: 1px solid #ddff01;
+    text-align: left;
+    padding: 8px;
+
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    /* border-color: aqua; */
+  }
+.deleteicon{
+  
+  cursor: pointer;
+}
