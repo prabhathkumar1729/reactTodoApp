@@ -7,17 +7,17 @@ export default function Navbar() {
     <>
       <div className="Nav">
         <div className="Home">
-          <NavLink to="/" activeClassName="active">
+          <NavLink to="/">
             <FaReact />
           </NavLink>
         </div>
         <div className="Profile">
-          <NavLink to="/profile" activeClassName="active">
+          <NavLink to="/profile">
             Profile
           </NavLink>
         </div>
         <div className="TodoList">
-          <NavLink to="/todos" activeClassName="active">
+          <NavLink to="/todos">
             Todo list
           </NavLink>
         </div>
