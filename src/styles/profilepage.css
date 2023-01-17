@@ -3,7 +3,8 @@
   border: 3px solid #fbfbfb;
   background-color: #c83349;
   padding: 20px;
-  width: 60%;   
+  width: 60%;  
+  margin: 3em; 
 }
 .Profile{
   height:100%;
