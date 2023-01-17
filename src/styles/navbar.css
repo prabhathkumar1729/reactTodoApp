@@ -1,18 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
-/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-} */
 
 * {
-	font-family: "Titillium Web", sans-serif;
-  color: #fff
+  font-family: "Titillium Web", sans-serif;
+  color: #fff;
 }
-
-
+a {
+  text-decoration: none;
+}
 body {
   background: rgb(31, 30, 30);
   margin: 0;
@@ -23,9 +17,8 @@ body {
 .Nav {
   background-color: #000;
   color: #fff;
-  /* padding: 10px; */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: sticky;
   height: 80px;
@@ -47,12 +40,6 @@ body {
 .active {
   color: #15cdfc;
   text-decoration: underline;
-  /* background-color: yellow; */
-}
-
-.NavMenu {
-  display: flex;
-  align-items: center;
 }
 
 .NavBtn {

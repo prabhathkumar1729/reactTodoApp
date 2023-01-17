@@ -1,19 +1,22 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaReact } from "react-icons/fa";
 import "../styles/navbar.css";
 export default function Navbar() {
-  const navigate = useNavigate();
   return (
     <>
       <div className="Nav">
-        <NavLink to="/" activeClassName="active">
-          <FaReact />
-        </NavLink>
-        <div className="NavMenu">
+        <div className="Home">
+          <NavLink to="/" activeClassName="active">
+            <FaReact />
+          </NavLink>
+        </div>
+        <div className="Profile">
           <NavLink to="/profile" activeClassName="active">
             Profile
           </NavLink>
+        </div>
+        <div className="TodoList">
           <NavLink to="/todos" activeClassName="active">
             Todo list
           </NavLink>
@@ -25,11 +28,5 @@ export default function Navbar() {
         </div>
       </div>
     </>
-    // <div>
-    //   <NavLink to="/" activeStyle={{ color:'black' }}>Home</NavLink>
-    //   <NavLink to="/profile" activeStyle={{ color:'black' }}>Profile</NavLink>
-    //   <NavLink to="/todos" activeStyle={{ color:'black' }}>Todo list</NavLink>
-    //   <NavLink onClick={() => navigate("/newtodo")}>New Todo</NavLink>
-    // </div>
   );
 }

@@ -19,11 +19,13 @@ export default function Newtodo() {
     navigate("/todos");
   };
   return (
-    <div className="addtodo_container">
-      <form onSubmit={addTodo}>
-        <input type="text" name="todo" placeholder="Enter todo here" />
-        <button type="submit">Add Todo</button>
-      </form>
+    <div className="addtodo">
+      <div className="addtodo_container">
+        <form onSubmit={addTodo}>
+          <input type="text" name="todo" placeholder="Enter todo here" />
+          <button type="submit">Add Todo</button>
+        </form>
+      </div>
     </div>
   );
 }

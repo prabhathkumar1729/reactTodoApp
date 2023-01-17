@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/todolist.css";
 export default function Hometodo({ todos }) {
-  // console.log("Hometodo", todos);
   function getRowColor(completed) {
     if (completed) {
       return "green";

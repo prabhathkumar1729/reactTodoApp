@@ -13,6 +13,11 @@
       "completed": true
     },
     {
+      "id": 2,
+      "content": "Hello, world 2",
+      "completed": false
+    },
+    {
       "id": 3,
       "content": "Hello, world 3",
       "completed": true
@@ -31,11 +36,6 @@
       "id": 6,
       "content": "Hello, world 6",
       "completed": false
-    },
-    {
-      "content": "I added this now",
-      "completed": false,
-      "id": 7
     }
   ]
 }
